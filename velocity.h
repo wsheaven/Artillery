@@ -1,9 +1,12 @@
 #pragma once
 #include "direction.h"
+#include "velocityTest.h"
 
 class Velocity
 {
 public: 
+
+	friend class VelocityTest;
 
 	Velocity(); 
 
@@ -13,7 +16,7 @@ public:
 
 	double getSpeed();
 
-	Direction getDirection();
+	double getDirection();
 
 	void setDX(double dx);
 
